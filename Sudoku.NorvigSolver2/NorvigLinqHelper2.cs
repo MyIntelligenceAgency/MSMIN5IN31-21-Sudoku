@@ -14,7 +14,7 @@ namespace Sudoku.NorvigSolver2
 
 	public class Possible
 	{
-		private List<bool> _b = new List<bool>();
+		private List<bool> _b = new List<bool>(); 
 		private Possible possible;
 
 		public Possible()
