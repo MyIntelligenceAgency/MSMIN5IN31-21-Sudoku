@@ -16,7 +16,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Puzzles", "Puzzles", "{5351
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Z3Solvers", "Sudoku.Z3Solvers\Sudoku.Z3Solvers.csproj", "{A35C20E9-B1AC-47FD-9213-E84C6C37C2E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.NorvigSolver", "Sudoku.NorvigSolver\Sudoku.NorvigSolver.csproj", "{0D6D18E4-5937-437C-84B0-417409DD3ACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.NorvigSolver", "Sudoku.NorvigSolver\Sudoku.NorvigSolver.csproj", "{0D6D18E4-5937-437C-84B0-417409DD3ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorvigSecondSolver", "NorvigSecondSolver\NorvigSecondSolver.csproj", "{E772DEDC-E91F-4F7E-8434-CD7919DA4CD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{776F1B16-B8E4-4B91-9C5F-B991376DB40F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.NorvigSolver2", "Sudoku.NorvigSolver2\Sudoku.NorvigSolver2.csproj", "{0CE81222-DF70-4EC9-9AAE-241755F1E1A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +49,14 @@ Global
 		{0D6D18E4-5937-437C-84B0-417409DD3ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D6D18E4-5937-437C-84B0-417409DD3ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D6D18E4-5937-437C-84B0-417409DD3ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E772DEDC-E91F-4F7E-8434-CD7919DA4CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E772DEDC-E91F-4F7E-8434-CD7919DA4CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E772DEDC-E91F-4F7E-8434-CD7919DA4CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E772DEDC-E91F-4F7E-8434-CD7919DA4CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE81222-DF70-4EC9-9AAE-241755F1E1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE81222-DF70-4EC9-9AAE-241755F1E1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE81222-DF70-4EC9-9AAE-241755F1E1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE81222-DF70-4EC9-9AAE-241755F1E1A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
