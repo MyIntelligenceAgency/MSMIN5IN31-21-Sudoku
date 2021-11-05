@@ -11,3 +11,17 @@ En l'état, la solution contient:
 - Un projet Sudoku.Benchmark de Console permettant de tester les solvers de Sudoku de façon individuels ou dans le cadre d'un Benchmark comparatif. Ce projet référence les projets de solvers, et c'est celui que vous devez lancer pour tester votre code.
 
 Les groupes de travail sont invités à àjouter à la solution leur propre projet de librairie sur le modèle du projet z3 en exemple.
+
+https://data-notes.co/biologically-inspired-ai-differential-evolution-particle-swarm-optimization-and-firefly-e8d953497978
+
+https://www.sciencedirect.com/science/article/pii/S0020025516320904
+
+https://dev.heuristiclab.com/trac.fcgi/wiki/Features
+
+https://github.com/pixelsyndicate/Sudoku_Evolution_Solution
+
+https://github.com/fisenkodv/sudoku-combinatorial-evolution-solver
+
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/november/test-run-solving-sudoku-using-combinatorial-evolution
+
+https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.parallelloopstate.break?redirectedfrom=MSDN&view=net-5.0#System_Threading_Tasks_ParallelLoopState_Break
