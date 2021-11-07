@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sudoku.GeneticSharpSolvers
+namespace Sudoku.DlxlibSolvers
 {
     class Program
     {

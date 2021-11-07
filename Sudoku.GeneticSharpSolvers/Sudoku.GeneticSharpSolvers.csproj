@@ -1,17 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GeneticSharp" Version="2.6.0" />
-    <PackageReference Include="GeneticSharp.Extensions" Version="2.6.0" />
+    <ProjectReference Include="..\Sudoku.Shared\Sudoku.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sudoku.Shared\Sudoku.Shared.csproj" />
+    <Reference Include="GeneticSharp.Domain">
+      <HintPath>external\GeneticSharp.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneticSharp.Infrastructure.Framework">
+      <HintPath>external\GeneticSharp.Infrastructure.Framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

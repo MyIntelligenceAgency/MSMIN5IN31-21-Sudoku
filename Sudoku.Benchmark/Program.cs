@@ -4,12 +4,22 @@ using System.Globalization;
 using System.Linq;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Running;
+using Humanizer;
 using Sudoku.Shared;
 
 namespace Sudoku.Benchmark
 {
     class Program
     {
+
+#if DEBUG
+        private static bool IsDebug = true;
+#else
+        private static bool IsDebug = false;
+#endif
+
+
+
         static void Main(string[] args)
         {
 
@@ -17,41 +27,62 @@ namespace Sudoku.Benchmark
 
             while (true)
             {
-                try
+                if (IsDebug)
                 {
-                    Console.WriteLine("Select Mode: \n1-Single Solver Test, \n2-Quick Benchmark (Medium, 5s max per sudoku, Single invocation), \n3-Complete Benchmark (All difficulties, 5 mn max per sudoku, several invocations), \n4-Exit program");
-                    var strMode = Console.ReadLine();
-                    int.TryParse(strMode, out var intMode);
-                    //Console.SetBufferSize(130, short.MaxValue - 100);
-                    switch (intMode)
+                    if (RunMenu())
                     {
-                        case 1:
-                            SingleSolverTest();
-                            break;
-                        case 2:
-                            //Init solvers
-                            var temp = new QuickBenchmarkSolvers();
-                            //BenchmarkRunner.Run<QuickBenchmarkSolvers>(new DebugInProcessConfig());
-                            BenchmarkRunner.Run<QuickBenchmarkSolvers>();
-                            break;
-                        case 3:
-                            //Init solvers
-                            var temp2 = new CompleteBenchmarkSolvers();
-                            BenchmarkRunner.Run<CompleteBenchmarkSolvers>();
-                            break;
-                        default:
-                            return;
+                        return;
                     }
+
                 }
-                catch (Exception e)
+                else
                 {
-                    Console.WriteLine(e);
+                    try
+                    {
+                        if (RunMenu())
+                        {
+                            return;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                    }
                 }
             }
         }
 
 
+        private static bool RunMenu()
+        {
 
+            Console.WriteLine("Select Mode: \n1-Single Solver Test, \n2-Quick Benchmark (Medium, 5s max per sudoku, Single invocation), \n3-Complete Benchmark (All difficulties, 5 mn max per sudoku, several invocations), \n4-Exit program");
+            var strMode = Console.ReadLine();
+            int.TryParse(strMode, out var intMode);
+            //Console.SetBufferSize(130, short.MaxValue - 100);
+            switch (intMode)
+            {
+                case 1:
+                    SingleSolverTest();
+                    break;
+                case 2:
+                    //Init solvers
+                    var temp = new QuickBenchmarkSolvers();
+                    //BenchmarkRunner.Run<QuickBenchmarkSolvers>(new DebugInProcessConfig());
+                    BenchmarkRunner.Run<QuickBenchmarkSolvers>();
+                    break;
+                case 3:
+                    //Init solvers
+                    var temp2 = new CompleteBenchmarkSolvers();
+                    BenchmarkRunner.Run<CompleteBenchmarkSolvers>();
+                    break;
+                default:
+                    return true;
+            }
+
+            return false;
+
+        }
 
         private static void SingleSolverTest()
         {

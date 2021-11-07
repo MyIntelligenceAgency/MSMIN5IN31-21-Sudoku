@@ -32,6 +32,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.NorvigSolver", "Sudo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.NeuralNetworkSolver", "Sudoku.NeuralNetworkSolver\Sudoku.NeuralNetworkSolver.csproj", "{89ADA199-860A-4302-BC18-702A0E5B1C56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.HumanTechnique", "Sudoku.HumanTechnique\Sudoku.HumanTechnique.csproj", "{2D65972F-26EF-4C15-9421-15C13716BB56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.DlxlibSolvers", "Sudoku.DlxlibSolvers\Sudoku.DlxlibSolvers.csproj", "{8B3423A9-412D-4ACF-AC0B-98CD81DA4276}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +86,14 @@ Global
 		{89ADA199-860A-4302-BC18-702A0E5B1C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89ADA199-860A-4302-BC18-702A0E5B1C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89ADA199-860A-4302-BC18-702A0E5B1C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D65972F-26EF-4C15-9421-15C13716BB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D65972F-26EF-4C15-9421-15C13716BB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D65972F-26EF-4C15-9421-15C13716BB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D65972F-26EF-4C15-9421-15C13716BB56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3423A9-412D-4ACF-AC0B-98CD81DA4276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3423A9-412D-4ACF-AC0B-98CD81DA4276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3423A9-412D-4ACF-AC0B-98CD81DA4276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3423A9-412D-4ACF-AC0B-98CD81DA4276}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

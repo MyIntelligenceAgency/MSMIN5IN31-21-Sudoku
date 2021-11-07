@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Sudoku.Shared
@@ -6,9 +7,9 @@ namespace Sudoku.Shared
     public static class Utils
     {
 
-        public static T[][] ToJaggedArray<T>(this T[] source, int columnLength)
+        public static T[][] ToJaggedArray<T>(this IList<T> source, int columnLength)
         {
-            var rowLength = source.Length / columnLength;
+            var rowLength = source.Count / columnLength;
             var toReturn = new T[rowLength][];
             for (int rowIndex = 0; rowIndex < rowLength; rowIndex++)
             {
@@ -16,7 +17,7 @@ namespace Sudoku.Shared
                 for (int colIndex = 0; colIndex < columnLength; colIndex++)
                 {
                     var globalIndex = rowIndex * columnLength + colIndex;
-                    if (globalIndex<source.Length)
+                    if (globalIndex<source.Count)
                     {
                         toReturn[rowIndex][colIndex] = source[globalIndex];
                     }
